@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rasika Patil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .navbar {
+      background: #1c1c1c;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7aa6ff;
+    }
+    .hero {
+      padding: 60px 0 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contact-section {
+      padding: 60px 0;
+    }
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      background-color: #1c1c1c;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      color: #fff;
+    }
+    .contact-box h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      background: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #fff;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(to right, #555, #777);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(to right, #777, #999);
+    }
+    @media (max-width: 768px) {
+      .contact-box {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">👩‍💻 Rasika Patil</div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out for collaborations, projects, or just to say hello!</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-box">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

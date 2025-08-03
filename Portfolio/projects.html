@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Rasika Patil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .navbar {
+      background: #1c1c1c;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7aa6ff;
+    }
+    .hero {
+      padding: 60px 0 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #555;
+    }
+    .projects-section {
+      padding: 30px 0 80px;
+    }
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      color: #fff;
+    }
+    .project-image {
+      height: 200px;
+      overflow: hidden;
+    }
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .project-content {
+      padding: 20px;
+    }
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .project-description {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tech-tags span {
+      background-color: #4a63e7;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .project-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">👩‍💻 Rasika Patil</div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Projects</h1>
+      <p>A showcase of some of my recent work and collaborations.</p>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="container">
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="donation.AVIF" alt="Organ Donation Website">
+        </div>
+        <div class="project-content">
+          <div class="project-title">Organ Donation Website</div>
+          <div class="project-description">
+            A website created for an NGO to manage organ donation records, promote awareness, display events and allow user registration.
+          </div>
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="money.jpg" alt="Client Management System">
+        </div>
+        <div class="project-content">
+          <div class="project-title">Client Management System</div>
+          <div class="project-description">
+            A web-based solution for tracking clients who lend money on interest. Includes record entry, payment tracking, and summary dashboard.
+          </div>
+          <div class="tech-tags">
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Local Storage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="market.webp" alt="Supermarket Billing System">
+        </div>
+        <div class="project-content">
+          <div class="project-title">Supermarket Billing System</div>
+          <div class="project-description">
+            A Java-based billing software that handles product entry, invoice generation, and total cost calculation with GUI support.
+          </div>
+          <div class="tech-tags">
+            <span>Java</span>
+            <span>Swing</span>
+            <span>OOP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="game.jpg" alt="3D Maze Survival Game">
+        </div>
+        <div class="project-content">
+          <div class="project-title">3D Maze Survival Game</div>
+          <div class="project-description">
+            A 3D survival shooter game built in Python using Ursina Engine. Includes maze navigation, enemy AI, and player health system.
+          </div>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Pygame</span>
+            <span>Game Design</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

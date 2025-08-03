@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasika Patil | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      color: #222;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .navbar {
+      background: #1c1c1c;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7aa6ff;
+    }
+    .hero {
+      background: #f0f0f0;
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-card {
+      background: #1c1c1c;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      font-weight: 700;
+    }
+    .hero-text .sub-text {
+      margin: 20px 0;
+      font-size: 1rem;
+      color: #aaa;
+    }
+    .hero-btn {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero-btn:hover {
+      background: #fff;
+      color: #1c1c1c;
+    }
+    .hero-image img {
+      width: 300px;
+      border-radius: 20px;
+    }
+    @media(max-width: 768px) {
+      .hero-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-image img {
+        width: 250px;
+        margin-top: 20px;
+      }
+    }
+    .about {
+      padding: 60px 20px;
+         }
+    .about .container {
+      background: #1c1c1c;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+     color : #fff;
+    }
+    .about p {
+      font-size: 1.05rem;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">👩‍💻 Rasika Patil</div>
+      <ul class="nav-links">
+        <li><a href="protfolio.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-card">
+      <div class="hero-text">
+        <p>Hello, I'm Rasika Patil</p>
+        <h1>A College Student & Creative Learner</h1>
+        <p class="sub-text">I'm passionate about designing user-friendly interfaces and learning frontend technologies. Currently exploring HTML, CSS, JavaScript, and UI/UX principles while working on personal projects and academic activities.</p>
+        <a href="projects.html" class="hero-btn">View My Projects</a>
+      </div>
+      <div class="hero-image">
+        <img src="profile.webp" alt="Profile Image">
+      </div>
+    </div>
+  </section>
+
+<section class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I'm a college student with a keen interest in frontend development and UI/UX design. My journey in web development began with simple HTML pages, and since then, I've been learning how to build responsive, accessible websites that offer seamless user experiences.</p>
+    <p>I enjoy experimenting with creative layouts, color schemes, and interactive designs. Apart from technical skills, I believe understanding user behavior and design thinking is crucial for crafting effective digital solutions.</p>
+    <p>Beyond academics, I love exploring new design trends, participating in workshops, and contributing to open-source projects. In my free time, you can find me sketching UI concepts, watching design tutorials, or going for nature walks to refresh my creativity.</p>
+  </div>
+</section>
+
+
+</body>
+</html>

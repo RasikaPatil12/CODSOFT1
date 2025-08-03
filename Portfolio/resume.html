@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume | Rasika Patil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      color: #222;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .navbar {
+      background: #1c1c1c;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #7aa6ff;
+    }
+    .hero {
+      padding: 60px 0 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #555;
+    }
+    .resume-section {
+      padding: 50px 0 80px;
+    }
+    .resume-box {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #fff;
+    }
+    .resume-box h2 {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    .resume-icon {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .resume-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .resume-box p {
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+    .download-btn {
+      background: #d9d9d9;
+      color: #222;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: background0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .download-btn:hover {
+      background: #c4c4c4;
+    }
+    @media (max-width: 768px) {
+      .resume-box h2 {
+        font-size: 1.4rem;
+      }
+      .resume-icon {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">👩‍💻 Rasika Patil</div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Resume</h1>
+      <p>View and download my professional resume.</p>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <div class="container">
+      <div class="resume-box">
+        <div class="resume-icon">📄</div>
+        <h3>Download My Resume</h3>
+        <p>Get a detailed overview of my skills, education, and experience.</p>
+        <a href="resume.pdf" class="download-btn" download>Download Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
